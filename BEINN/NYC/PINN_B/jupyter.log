@@ -1,0 +1,302 @@
+
+Command to create ssh tunnel:
+ssh -N -L 8889:c4:8889 ttorku@hamilton.cs.mtsu.edu
+
+Use a Browser on your local machine to go to:
+localhost:8889  (prefix w/ https:// if using password)
+
+[W 2023-05-26 10:21:23.215 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2023-05-26 10:21:23.216 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2023-05-26 10:21:23.218 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[I 2023-05-26 10:21:23.218 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-05-26 10:21:23.219 NotebookApp] Config option `kernel_spec_manager_class` not recognized by `NotebookApp`.
+[W 2023-05-26 10:21:23.221 NotebookApp] Config option `kernel_spec_manager_class` not recognized by `NotebookApp`.
+[W 2023-05-26 10:21:23.222 NotebookApp] Config option `kernel_spec_manager_class` not recognized by `NotebookApp`.
+[I 2023-05-26 10:21:23.222 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-05-26 10:21:23.766 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2023-05-26 10:21:23.766 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2023-05-26 10:21:23.766 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-05-26 10:21:24.491 ServerApp] [nb_conda_kernels] enabled, 3 kernels found
+[I 2023-05-26 10:21:24.528 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-05-26 10:21:24.529 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.1
+[I 2023-05-26 10:21:24.529 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2023-05-26 10:21:24.529 LabApp] JupyterLab extension loaded from /opt/ohpc/pub/apps/miniconda/lib/python3.9/site-packages/jupyterlab
+[I 2023-05-26 10:21:24.529 LabApp] JupyterLab application directory is /opt/ohpc/pub/apps/miniconda/share/jupyter/lab
+[I 2023-05-26 10:21:24.532 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-05-26 10:21:24.557 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-05-26 10:21:24.557 ServerApp] Serving notebooks from local directory: /home/ttorku/DISSERTATION/BEINN/NYC/PINN_B
+[I 2023-05-26 10:21:24.557 ServerApp] Jupyter Server 1.23.5 is running at:
+[I 2023-05-26 10:21:24.557 ServerApp] http://c4:8889/lab?token=69ac47c31c3107c8fd3a95b100549862735abdbcbbea738a
+[I 2023-05-26 10:21:24.557 ServerApp]  or http://127.0.0.1:8889/lab?token=69ac47c31c3107c8fd3a95b100549862735abdbcbbea738a
+[I 2023-05-26 10:21:24.557 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-05-26 10:21:24.561 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/ttorku/.local/share/jupyter/runtime/jpserver-1208620-open.html
+    Or copy and paste one of these URLs:
+        http://c4:8889/lab?token=69ac47c31c3107c8fd3a95b100549862735abdbcbbea738a
+     or http://127.0.0.1:8889/lab?token=69ac47c31c3107c8fd3a95b100549862735abdbcbbea738a
+[W 2023-05-26 10:23:20.960 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-05-26 10:23:21.511 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.512 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.519 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.521 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.536 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.538 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.546 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.551 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.603 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.605 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.607 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.609 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.821 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.823 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.827 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.828 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.942 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.954 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:21.961 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/TN/overall_simu.ipynb?content=0&1685114601889 (10.0.0.1): file or directory does not exist: 'DISSERTATION/BEINN/TN/overall_simu.ipynb'
+[W 2023-05-26 10:23:21.961 ServerApp] wrote error: "file or directory does not exist: 'DISSERTATION/BEINN/TN/overall_simu.ipynb'"
+[W 2023-05-26 10:23:21.961 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/TN/overall_simu.ipynb?content=0&1685114601889 (10.0.0.1) 0.97ms referer=http://127.0.0.1:8889/lab
+[W 2023-05-26 10:23:21.962 ServerApp] 404 GET /api/contents/Folders/COMS7900/ThreeBody/Thomas_3D.ipynb?content=0&1685114601888 (10.0.0.1): file or directory does not exist: 'Folders/COMS7900/ThreeBody/Thomas_3D.ipynb'
+[W 2023-05-26 10:23:21.963 ServerApp] wrote error: "file or directory does not exist: 'Folders/COMS7900/ThreeBody/Thomas_3D.ipynb'"
+[W 2023-05-26 10:23:21.963 ServerApp] 404 GET /api/contents/Folders/COMS7900/ThreeBody/Thomas_3D.ipynb?content=0&1685114601888 (10.0.0.1) 1.09ms referer=http://127.0.0.1:8889/lab
+[W 2023-05-26 10:23:21.963 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/NYC/data_driven_simu.ipynb?content=0&1685114601889 (10.0.0.1): file or directory does not exist: 'DISSERTATION/BEINN/NYC/data_driven_simu.ipynb'
+[W 2023-05-26 10:23:21.963 ServerApp] wrote error: "file or directory does not exist: 'DISSERTATION/BEINN/NYC/data_driven_simu.ipynb'"
+[W 2023-05-26 10:23:21.963 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/NYC/data_driven_simu.ipynb?content=0&1685114601889 (10.0.0.1) 1.29ms referer=http://127.0.0.1:8889/lab
+[W 2023-05-26 10:23:21.964 ServerApp] 404 GET /api/contents/DISSERTATION/SEINN/deterministic_sir.py?content=0&1685114601889 (10.0.0.1): file or directory does not exist: 'DISSERTATION/SEINN/deterministic_sir.py'
+[W 2023-05-26 10:23:21.964 ServerApp] wrote error: "file or directory does not exist: 'DISSERTATION/SEINN/deterministic_sir.py'"
+[W 2023-05-26 10:23:21.964 ServerApp] 404 GET /api/contents/DISSERTATION/SEINN/deterministic_sir.py?content=0&1685114601889 (10.0.0.1) 0.65ms referer=http://127.0.0.1:8889/lab
+[W 2023-05-26 10:23:21.987 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/TN/PINN_B/Figures/TNbeinn.txt?content=0&1685114601890 (10.0.0.1): file or directory does not exist: 'DISSERTATION/BEINN/TN/PINN_B/Figures/TNbeinn.txt'
+[W 2023-05-26 10:23:21.988 ServerApp] wrote error: "file or directory does not exist: 'DISSERTATION/BEINN/TN/PINN_B/Figures/TNbeinn.txt'"
+[W 2023-05-26 10:23:21.988 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/TN/PINN_B/Figures/TNbeinn.txt?content=0&1685114601890 (10.0.0.1) 0.97ms referer=http://127.0.0.1:8889/lab
+[W 2023-05-26 10:23:21.988 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/TN/PINN/Figures/TNpinn.txt?content=0&1685114601890 (10.0.0.1): file or directory does not exist: 'DISSERTATION/BEINN/TN/PINN/Figures/TNpinn.txt'
+[W 2023-05-26 10:23:22.025 ServerApp] wrote error: "file or directory does not exist: 'DISSERTATION/BEINN/TN/PINN/Figures/TNpinn.txt'"
+[W 2023-05-26 10:23:22.026 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/TN/PINN/Figures/TNpinn.txt?content=0&1685114601890 (10.0.0.1) 38.52ms referer=http://127.0.0.1:8889/lab
+[W 2023-05-26 10:23:22.026 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:22.236 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:22.336 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:22.347 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:22.368 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:22.500 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 10:23:22.628 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/NYC/PINN_B?1685114602573 (10.0.0.1): file or directory does not exist: 'DISSERTATION/BEINN/NYC/PINN_B'
+[W 2023-05-26 10:23:22.628 ServerApp] wrote error: "file or directory does not exist: 'DISSERTATION/BEINN/NYC/PINN_B'"
+[W 2023-05-26 10:23:22.628 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/NYC/PINN_B?1685114602573 (10.0.0.1) 0.59ms referer=http://127.0.0.1:8889/lab
+[I 2023-05-26 10:23:30.764 ServerApp] New terminal with automatic name: 1
+[I 2023-05-26 10:25:04.351 ServerApp] Saving file at /nyc_sird_beinn.py
+[W 2023-05-26 11:10:24.376 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-05-26 11:10:24.583 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.585 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.604 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.604 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.622 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.624 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.630 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.633 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.699 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.701 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.705 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.708 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.883 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.885 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.888 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.890 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.968 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.978 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:24.996 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:25.080 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:25.146 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:25.156 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:25.173 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 11:10:25.258 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[I 2023-05-26 12:49:25.443 ServerApp] Saving file at /nyc_sird_beinn.py
+[W 2023-05-26 12:51:20.963 ServerApp] WebSocket ping timeout after 119346 ms.
+[W 2023-05-26 13:12:42.418 ServerApp] WebSocket ping timeout after 119855 ms.
+[W 2023-05-26 15:10:36.060 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-05-26 15:10:36.442 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.444 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.449 ServerApp] 404 GET /api/contents/Figures/MIbeinn.txt?content=0&1685131836167 (10.0.0.1): file or directory does not exist: 'Figures/MIbeinn.txt'
+[W 2023-05-26 15:10:36.450 ServerApp] wrote error: "file or directory does not exist: 'Figures/MIbeinn.txt'"
+[W 2023-05-26 15:10:36.450 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.451 ServerApp] 404 GET /api/contents/Figures/MIbeinn.txt?content=0&1685131836167 (10.0.0.1) 3.95ms referer=http://127.0.0.1:8889/lab
+[W 2023-05-26 15:10:36.452 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.470 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.472 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.480 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.481 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.525 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.528 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.530 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.532 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.763 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.765 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.768 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.770 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.885 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.908 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:36.931 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:37.180 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:37.270 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:37.287 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:37.319 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 15:10:37.458 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[I 2023-05-26 15:51:01.799 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 15:51:21.609 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 15:53:54.916 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 15:54:23.555 ServerApp] Saving file at /nyc_sird_beinn.py
+[W 2023-05-26 18:02:26.176 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-05-26 18:02:26.367 ServerApp] 404 GET /api/contents/mi_sird_beinn.py?content=0&1685142146305 (10.0.0.1): file or directory does not exist: 'mi_sird_beinn.py'
+[W 2023-05-26 18:02:26.368 ServerApp] wrote error: "file or directory does not exist: 'mi_sird_beinn.py'"
+[W 2023-05-26 18:02:26.368 ServerApp] 404 GET /api/contents/mi_sird_beinn.py?content=0&1685142146305 (10.0.0.1) 1.17ms referer=http://127.0.0.1:8889/lab
+[W 2023-05-26 18:02:26.379 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.381 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.384 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.388 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.402 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.405 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.407 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.412 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.454 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.458 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.462 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.466 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.656 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.659 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.663 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.666 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.743 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.753 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.770 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.859 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.928 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.939 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:26.957 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 18:02:27.042 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[I 2023-05-26 18:06:28.549 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:06:59.302 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:08:24.521 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:08:34.014 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:11:51.062 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:12:21.511 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:12:28.626 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:13:15.390 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:18:17.617 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:18:40.173 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:18:57.429 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:19:03.599 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:21:03.780 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:21:04.675 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:29:09.392 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:29:26.136 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:29:34.342 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 18:29:57.812 ServerApp] Saving file at /nyc_sird_beinn.py
+[W 2023-05-26 18:44:56.435 ServerApp] WebSocket ping timeout after 119961 ms.
+[W 2023-05-26 18:49:14.888 ServerApp] WebSocket ping timeout after 119969 ms.
+ERROR:asyncio:Exception in callback BaseAsyncIOLoop._handle_events(16, 1)
+handle: <Handle BaseAsyncIOLoop._handle_events(16, 1)>
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/apps/miniconda/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/opt/ohpc/pub/apps/miniconda/lib/python3.9/site-packages/tornado/platform/asyncio.py", line 189, in _handle_events
+    handler_func(fileobj, events)
+  File "/opt/ohpc/pub/apps/miniconda/lib/python3.9/site-packages/terminado/management.py", line 252, in pty_read
+    client.on_pty_read(s)
+  File "/opt/ohpc/pub/apps/miniconda/lib/python3.9/site-packages/terminado/websocket.py", line 73, in on_pty_read
+    self.send_json_message(["stdout", text])
+  File "/opt/ohpc/pub/apps/miniconda/lib/python3.9/site-packages/terminado/websocket.py", line 77, in send_json_message
+    self.write_message(json_msg)
+  File "/opt/ohpc/pub/apps/miniconda/lib/python3.9/site-packages/jupyter_server/terminal/handlers.py", line 44, in write_message
+    super().write_message(message, binary=binary)
+  File "/opt/ohpc/pub/apps/miniconda/lib/python3.9/site-packages/tornado/websocket.py", line 337, in write_message
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+[W 2023-05-26 18:59:39.721 ServerApp] WebSocket ping timeout after 119960 ms.
+[W 2023-05-26 19:16:44.742 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-05-26 19:16:44.908 ServerApp] 404 GET /api/contents/Figures/MIbeinn.txt?content=0&1685146604824 (10.0.0.1): file or directory does not exist: 'Figures/MIbeinn.txt'
+[W 2023-05-26 19:16:44.908 ServerApp] wrote error: "file or directory does not exist: 'Figures/MIbeinn.txt'"
+[W 2023-05-26 19:16:44.908 ServerApp] 404 GET /api/contents/Figures/MIbeinn.txt?content=0&1685146604824 (10.0.0.1) 2.34ms referer=http://127.0.0.1:8889/lab
+[W 2023-05-26 19:16:44.930 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:44.934 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:44.936 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:44.940 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:44.954 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:44.957 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:44.960 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:44.964 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:44.996 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:44.997 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.000 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.002 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.225 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.227 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.231 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.232 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.304 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.314 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.330 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.449 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.512 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.520 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.536 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:16:45.613 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 19:32:43.864 ServerApp] WebSocket ping timeout after 119909 ms.
+[I 2023-05-26 20:35:38.139 ServerApp] Saving file at /nyc_sird_beinn.py
+[W 2023-05-26 21:58:42.450 ServerApp] WebSocket ping timeout after 119833 ms.
+[I 2023-05-26 22:24:43.329 ServerApp] Saving file at /nyc_sird_beinn.py
+[I 2023-05-26 22:24:57.565 ServerApp] Saving file at /nyc_sird_beinn.py
+[W 2023-05-26 22:26:32.290 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-05-26 22:26:32.485 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.485 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.491 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.493 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.508 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.512 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.513 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.519 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.549 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.552 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.552 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.564 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.753 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.755 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.760 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.763 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.849 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.858 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.875 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:32.955 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:33.015 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:33.024 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:33.041 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:26:33.136 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.066 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-05-26 22:48:48.335 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.336 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.342 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.344 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.360 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.360 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.367 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.369 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.387 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/NYC/PINN/nyc_sird_pinn.py?content=0&1685159328232 (10.0.0.1): file or directory does not exist: 'DISSERTATION/BEINN/NYC/PINN/nyc_sird_pinn.py'
+[W 2023-05-26 22:48:48.387 ServerApp] wrote error: "file or directory does not exist: 'DISSERTATION/BEINN/NYC/PINN/nyc_sird_pinn.py'"
+[W 2023-05-26 22:48:48.387 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/NYC/PINN/nyc_sird_pinn.py?content=0&1685159328232 (10.0.0.1) 1.16ms referer=http://127.0.0.1:8889/lab
+[W 2023-05-26 22:48:48.407 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.409 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.412 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.414 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.647 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.648 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.652 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.654 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.734 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.745 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.764 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.854 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.923 ServerApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.933 ServerApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:48.951 ServerApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:49.040 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 2023-05-26 22:48:51.610 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/NYC/PINN?1685159331541 (10.0.0.1): file or directory does not exist: 'DISSERTATION/BEINN/NYC/PINN'
+[W 2023-05-26 22:48:51.610 ServerApp] wrote error: "file or directory does not exist: 'DISSERTATION/BEINN/NYC/PINN'"
+[W 2023-05-26 22:48:51.610 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/NYC/PINN?1685159331541 (10.0.0.1) 0.93ms referer=http://127.0.0.1:8889/lab

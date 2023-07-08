@@ -230,3 +230,7 @@ localhost:8888  (prefix w/ https:// if using password)
 [W 2023-05-26 22:13:56.147 ServerApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
 [I 2023-05-26 23:53:50.871 ServerApp] Saving file at /tn_sird_beinn.py
 [I 2023-05-27 00:01:02.294 ServerApp] Saving file at /tn_sird_beinn.py
+                                                                                                                                                                                                                                                                                                slurmstepd: error: *** JOB 2312 ON c5 CANCELLED AT 2023-05-28T13:01:37 DUE TO TIME LIMIT ***
+[C 2023-05-28 13:01:37.819 ServerApp] received signal 15, stopping
+[I 2023-05-28 13:01:37.822 ServerApp] Shutting down 4 extensions
+[I 2023-05-28 13:01:37.822 ServerApp] Shutting down 1 terminal

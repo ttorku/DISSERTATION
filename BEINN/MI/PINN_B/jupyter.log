@@ -309,3 +309,7 @@ localhost:8890  (prefix w/ https:// if using password)
 [I 2023-05-26 23:48:35.471 ServerApp] Saving file at /mi_sird_beinn.py
 [I 2023-05-26 23:50:11.311 ServerApp] Saving file at /mi_sird_beinn.py
 [W 2023-05-27 00:23:12.389 ServerApp] WebSocket ping timeout after 119821 ms.
+slurmstepd: error: *** JOB 2309 ON c2 CANCELLED AT 2023-05-28T10:02:07 DUE TO TIME LIMIT ***
+[C 2023-05-28 10:02:07.268 ServerApp] received signal 15, stopping
+[I 2023-05-28 10:02:07.271 ServerApp] Shutting down 4 extensions
+[I 2023-05-28 10:02:07.271 ServerApp] Shutting down 1 terminal

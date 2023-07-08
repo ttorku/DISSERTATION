@@ -300,3 +300,7 @@ tornado.websocket.WebSocketClosedError
 [W 2023-05-26 22:48:51.610 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/NYC/PINN?1685159331541 (10.0.0.1): file or directory does not exist: 'DISSERTATION/BEINN/NYC/PINN'
 [W 2023-05-26 22:48:51.610 ServerApp] wrote error: "file or directory does not exist: 'DISSERTATION/BEINN/NYC/PINN'"
 [W 2023-05-26 22:48:51.610 ServerApp] 404 GET /api/contents/DISSERTATION/BEINN/NYC/PINN?1685159331541 (10.0.0.1) 0.93ms referer=http://127.0.0.1:8889/lab
+slurmstepd: error: *** JOB 2311 ON c4 CANCELLED AT 2023-05-28T10:21:37 DUE TO TIME LIMIT ***
+[C 2023-05-28 10:21:37.735 ServerApp] received signal 15, stopping
+[I 2023-05-28 10:21:37.738 ServerApp] Shutting down 4 extensions
+[I 2023-05-28 10:21:37.738 ServerApp] Shutting down 1 terminal

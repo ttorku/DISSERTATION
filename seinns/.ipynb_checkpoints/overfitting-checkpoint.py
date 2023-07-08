@@ -34,7 +34,7 @@ import matplotlib as mpl
 import matplotlib.dates as mdates
 
 c_dir =os.getcwd()
-path = '/Case1/'
+path = '/Output/'
 out = c_dir +path
 if not os.path.exists(out):
     os.makedirs(out)
@@ -310,73 +310,147 @@ def data_preprocess(data, lb, ub, N0):
     return S, I, R, D, T
 
 N0 = 6.82*1.e6
-lb =281 #change this
-ub =431
-length=int(ub-lb)
-eps =1e-1
+# lb =281 #change this
+# ub =431
+# length=int(ub-lb)
+# eps =1e-1
 eta =0.94
 h =2
-v =0.06
+v =0.01
 alpha=0.5
 k =0.2
 sigma =0.1
 M=10
-SS, II, RR, DD, T=data_preprocess(data, lb, ub, N0)
+# SS, II, RR, DD, T=data_preprocess(data, lb, ub, N0)
     
-T = np.arange(0,length - 0.05,0.05)#here I used Nt with 0.1 stepsize
-T = T.reshape(len(T),1)
-dw =np.random.normal(size=(150, 1))
-layers = [1,60,60,60,60,1] #case 3
-model = SIRD(II/N0,RR/N0,SS/N0, T,1,layers, eps, h, eta, v,alpha, k,sigma, M, dw)
-model.train(30000)
+# T = np.arange(0,length - 0.05,0.05)#here I used Nt with 0.1 stepsize
+# T = T.reshape(len(T),1)
+# dw =np.random.normal(size=(150, 1))
+# layers = [1,60,60,60,60,1] #case 3
+# model = SIRD(II/N0,RR/N0,SS/N0, T,1,layers, eps, h, eta, v,alpha, k,sigma, M, dw)
+# model.train(30000)
 
-#predict output
-TT = np.arange(0,length).reshape(length,1)
-s_p,i_p,r_p= model.predict(TT)
+# #predict output
+# TT = np.arange(0,length).reshape(length,1)
+# s_p,i_p,r_p= model.predict(TT)
 
+# # case ='c1'
+# S_original=SS/N0
+# I_original=II/N0
+# R_original=RR/N0
 
-
-
-# case ='c1'
-S_original=SS/N0
-I_original=II/N0
-R_original=RR/N0
-
-#compute gsi
-gsi_pred =k*s_p**h*i_p/(s_p**h +alpha*i_p**h)
-gsi_act =k*S_original**h*I_original/(S_original**h +alpha*I_original**h)
+# #compute gsi
+# gsi_pred =k*s_p**h*i_p/(s_p**h +alpha*i_p**h)
+# gsi_act =k*S_original**h*I_original/(S_original**h +alpha*I_original**h)
 
 
-np.savetxt(out +'S_true_{}_{}_{}_{}.txt'.format(eta, h, v,k),S_original.flatten().tolist())
-np.savetxt(out +'I_true_{}_{}_{}_{}.txt'.format(eta, h, v, k),I_original.flatten().tolist())
-np.savetxt(out +'R_true_{}_{}_{}_{}.txt'.format(eta, h, v, k),R_original.flatten().tolist())
-np.savetxt(out +'S_pred_{}_{}_{}_{}.txt'.format(eta, h, v, k),s_p.flatten().tolist())
-np.savetxt(out +'I_pred_{}_{}_{}_{}.txt'.format(eta, h, v, k),i_p.flatten().tolist())
-np.savetxt(out +'R_pred_{}_{}_{}_{}.txt'.format(eta, h, v, k),r_p.flatten().tolist())
-np.savetxt(out +'gsi_pred_{}_{}_{}_{}.txt'.format(eta, h, v, k),gsi_pred.flatten().tolist())
-np.savetxt(out +'gsi_act_{}_{}_{}_{}.txt'.format(eta, h, v, k),gsi_act.flatten().tolist())
-#loss
-np.savetxt(out +'lossData_{}_{}_{}_{}.txt'.format(eta, h, v, k),model.loss_data)
-np.savetxt(out +'lossPhy_{}_{}_{}_{}.txt'.format(eta, h, v,k),model.loss_phys)
-np.savetxt(out +'total_loss_{}_{}_{}_{}.txt'.format(eta, h, v, k),model.total_loss)
+
+eps =1e-1
+l=3
+neuron =64
+layers =[1] +l*[neuron] +[1]
+epochs =[30000, 40000, 60000]
+for i in range(3):
+    #Train set
+    lb =281 #change this
+    ub =401
+    length=int(ub-lb)
+    T = np.arange(0,length - 0.05,0.05)
+    T = T.reshape(len(T),1)
+    SS, II, RR, DD, T=data_preprocess(data, lb, ub, N0)
+    dw =np.random.normal(size=(150, 1))
+    dw1 =dw[:length,:]
+    model = SIRD(II/N0,RR/N0,SS/N0, T,1,layers, eps, h, eta, v,alpha, k,sigma, M, dw1)
+    model.train(epochs[i])
+    np.savetxt(out +'loss_train_{}_{}.txt'.format(epochs[i], eps),model.total_loss) ##train loss
+    #val set
+    lb1 =401 #change this
+    ub1 =431
+    length1=int(ub1-lb1)
+    T1 = np.arange(0,length1 - 0.05,0.05)
+    T1 = T1.reshape(len(T1),1)
+    SS1, II1, RR1, DD1, T1=data_preprocess(data, lb1, ub1, N0)
+    dw2 =dw[:length1,:]
+    model1 = SIRD(II/N0,RR/N0,SS/N0, T,1,layers, eps, h, eta, v,alpha, k,sigma, M, dw2)
+    model1.train(epochs[i])
+    np.savetxt(out +'loss_val_{}_{}.txt'.format(epochs[i], eps),model1.total_loss) ##train loss
+    
+    #predict output
+    TT = np.arange(0,length1).reshape(length1,1)
+    s_p,i_p,r_p= model.predict(TT)
+    ##Get errors
+    I_or =II1.reshape(-1,)
+    I_p  =i_p.reshape(-1,)
+    test_actual=I_or
+    test_pred =I_p*N0
+    rmse =np.sqrt(mean_squared_error(test_actual, test_pred))
+    mape =np.linalg.norm((test_pred-test_actual),2)/np.linalg.norm(test_actual, 2)
+    ev =1- (np.var(test_pred-test_actual)/np.var(test_actual))
+    rel =np.sum((test_actual-test_pred)**2/(test_actual**2))
+    #Error Metrics
+    with open(out+'output1_{}_{}.txt'.format(epochs[i], eps), 'w') as f:
+        print("Error metrics for  epochs={} and epsilon={}".format(epochs[i], eps), file=f)
+        print("=======================================================\n", file=f)
+        print('RMSE',rmse, file=f)
+        print('MAPE',mape, file=f)
+        print('EV', ev, file=f)
+        print('REL', rel, file=f)
+        print("=======================================================\n", file=f)
 
 
-##Get errors
-I_or =I_original.reshape(-1,)
-I_p  =i_p.reshape(-1,)
-test_actual=I_or*N0
-test_pred =I_p*N0
-rmse =np.sqrt(mean_squared_error(test_actual, test_pred))
-mape =np.linalg.norm((test_pred-test_actual),2)/np.linalg.norm(test_actual, 2)
-ev =1- (np.var(test_pred-test_actual)/np.var(test_actual))
-rel =np.sum((test_actual-test_pred)**2/(test_actual**2))
-#Error Metrics
-with open(out+'gsi_{}_{}_{}_{}.txt'.format(eta, h, v, k), 'w') as f:
-    print("Error metrics for  eta={} and h ={} with v ={} and k={}".format(eta, h, v, k), file=f)
-    print("=======================================================\n", file=f)
-    print('RMSE',rmse, file=f)
-    print('MAPE',mape, file=f)
-    print('EV', ev, file=f)
-    print('REL', rel, file=f)
-    print("=======================================================\n", file=f)
-  
+
+eps =1e-3
+l=3
+neuron =64
+layers =[1] +l*[neuron] +[1]
+epochs =[30000, 40000, 60000]
+for i in range(3):
+    #Train set
+    lb =281 #change this
+    ub =401
+    length=int(ub-lb)
+    T = np.arange(0,length - 0.05,0.05)
+    T = T.reshape(len(T),1)
+    SS, II, RR, DD, T=data_preprocess(data, lb, ub, N0)
+    model = SIRD(II/N0,RR/N0,SS/N0, T,1,layers, eps, h, eta, v,alpha, k,sigma, M, dw)
+    model.train(epochs[i])
+    np.savetxt(out +'loss_train_{}_{}.txt'.format(epochs[i], eps),model.total_loss) ##train loss
+    #val set
+    lb1 =401 #change this
+    ub1 =431
+    length1=int(ub1-lb1)
+    T1 = np.arange(0,length1 - 0.05,0.05)
+    T1 = T1.reshape(len(T1),1)
+    SS1, II1, RR1, DD1, T1=data_preprocess(data, lb1, ub1, N0)
+    model1 = SIRD(II/N0,RR/N0,SS/N0, T,1,layers, eps, h, eta, v,alpha, k,sigma, M, dw)
+    model1.train(epochs[i])
+    np.savetxt(out +'loss_val_{}_{}.txt'.format(epochs[i], eps),model1.total_loss) ##train loss
+    
+    #predict output
+    TT = np.arange(0,length1).reshape(length1,1)
+    s_p,i_p,r_p= model.predict(TT)
+    ##Get errors
+    I_or =II1.reshape(-1,)
+    I_p  =i_p.reshape(-1,)
+    test_actual=I_or
+    test_pred =I_p*N0
+    rmse =np.sqrt(mean_squared_error(test_actual, test_pred))
+    mape =np.linalg.norm((test_pred-test_actual),2)/np.linalg.norm(test_actual, 2)
+    ev =1- (np.var(test_pred-test_actual)/np.var(test_actual))
+    rel =np.sum((test_actual-test_pred)**2/(test_actual**2))
+    #Error Metrics
+    with open(out+'output1_{}_{}.txt'.format(epochs[i], eps), 'w') as f:
+        print("Error metrics for  epochs={} and epsilon={}".format(epochs[i], eps), file=f)
+        print("=======================================================\n", file=f)
+        print('RMSE',rmse, file=f)
+        print('MAPE',mape, file=f)
+        print('EV', ev, file=f)
+        print('REL', rel, file=f)
+        print("=======================================================\n", file=f)
+
+
+
+
+
+
+
